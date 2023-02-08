@@ -8,8 +8,11 @@
     "allowJs": true, // Позволяет обрабатывать не только тс, но и джс
     "moduleResolution": "node", // Определяет какие импорты будут
     "baseUrl": ".", // Для абсолютного импорта
+    "paths": {
+      "*": ["./src/*"]
+    },
     "esModuleInterop": true, // Позволяет работать с пакетами common js как с обычными пакетами с помощью import
-    "allowSyntheticDefaultImports": true, // Делает более привычные импорты
+    "allowSyntheticDefaultImports": true // Делает более привычные импорты
   },
   "ts-node": { // Чтоб импорты заработали
     "compilerOptions": {
